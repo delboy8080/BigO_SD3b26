@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="BigO_SD3b26/BigO_SD3b26.vcxproj" />
+</Solution>
