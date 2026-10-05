@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "Pair.h"
 using namespace std;
 struct Book
 {
@@ -33,12 +33,6 @@ void print(T* arr, int size)
 	cout << endl;
 }
 
-template <class T>
-T greaterThan(T& x, T& y)
-{
-	T largest = x > y ? x : y;
-	return largest;
-}
 
 int main()
 {
@@ -48,7 +42,14 @@ int main()
 	print(charArr, 4);
 	Book bookArr[] = { Book("the widow"),Book("the general"),Book("the lord of the rings"),Book("the hobbit") };
 	print(bookArr, 4);
-	question1();
+	question4();
+}
+
+template <class T>
+T greaterThan(T& x, T& y)
+{
+	T largest = x > y ? x : y;
+	return largest;
 }
 
 void question1()
@@ -59,4 +60,27 @@ void question1()
 	cout << x << " and " << y << " Greatest: " << greaterThan(x, y)<<endl;
 	cout << c1 << " and " << c2 << " Greatest: " << greaterThan(c1, c2) << endl;
 	cout << s1 << " and " << s2 << " Greatest: " << greaterThan(s1, s2) << endl;
+}
+
+template <class T>
+T lessThan(T& x, T& y)
+{
+	return x < y ? x : y;
+}
+
+void question2()
+{
+	int x = 10, y = 5;
+	char c1 = 'A', c2 = 'B';
+	string s1 = "Hello", s2 = "Goodbye";
+	cout << x << " and " << y << " less: " << lessThan(x, y) << endl;
+	cout << c1 << " and " << c2 << " least: " << lessThan(c1, c2) << endl;
+	cout << s1 << " and " << s2 << " least: " << lessThan(s1, s2) << endl;
+}
+
+
+void question4()
+{
+	Pair<int, string> p1(1, "Hello");
+	cout << p1;
 }
