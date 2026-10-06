@@ -12,6 +12,7 @@ public:
 	S getSecond();
 	void setFirst(F f);
 	void setSecond(S s);
+
 	template <class F, class S>
 	friend std::ostream& operator<<(std::ostream& out, Pair<F, S>& p);
 };

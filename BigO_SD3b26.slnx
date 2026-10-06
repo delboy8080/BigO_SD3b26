@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="BigO_SD3b26/BigO_SD3b26.vcxproj" />
+  <Project Path="BigO_SD3b26/BigO_SD3b26.vcxproj" Id="87b63acb-ae40-499c-a5c4-5ecda73320a1" />
 </Solution>
